@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.user.LeaveRequestActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leave Application"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="18dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Date:"
+            android:textSize="16dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <EditText
+            android:id="@+id/startDatetxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_border"
+            android:inputType="date"
+            android:hint="Select Start Date"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Date:"
+            android:textSize="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/endDatetxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_border"
+            android:inputType="date"
+            android:hint="Select End Date"
+            android:padding="5dp"/>
+        
+        <EditText
+            android:id="@+id/txtsubject"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_border"
+            android:hint="Subject of Leave"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave Reason:"
+            android:textSize="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/txtlevreason"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/custom_border"
+            android:layout_marginTop="1dp"
+            android:hint="Describe Leave Reason"
+            android:gravity="top|start"
+            android:padding="4dp"/>
+
+
+        <Button
+            android:id="@+id/btnapply"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#8BC34A"
+            android:text="Apply" />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/resultlayout"
+        android:visibility="gone"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You applied leave from dates"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:padding="24dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/applyFromdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="applyfromdate"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:padding="24dp"/>
+        <TextView
+            android:id="@+id/applyTodate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="applyfromdate"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:padding="24dp"/>
+
+        <TextView
+            android:id="@+id/leavestatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave Status"
+            android:padding="24dp"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

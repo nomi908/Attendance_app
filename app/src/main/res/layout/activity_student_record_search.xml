@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.admin.StudentRecordSearch">
+
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:layout_marginTop="30dp"
+        >
+
+
+        <EditText
+            android:id="@+id/startDate"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_border"
+            android:inputType="date"
+            android:hint="Select Start Date"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginEnd="4dp"/>
+
+
+
+        <EditText
+            android:id="@+id/endDate"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border"
+            android:inputType="date"
+            android:hint="Select End Date"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/searchstd"
+        android:padding="10dp"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:id="@+id/useremailtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_gravity="center"
+            android:text="Email"
+            />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:backgroundTint ="#8BC34A"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+          >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attendance Grade"
+                android:textSize="16dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/attdGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N/a"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Present Days"
+                android:textSize="16dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/presentDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N/a"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/resultliststd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.admin.UserDetailsActivity">
+
+    <TextView
+        android:id="@+id/atdstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Status"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Date:"
+        android:textAlignment="center"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userdtimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:srcCompat="@drawable/avatarimg"
+
+        />
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/uemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:padding="6dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="24dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:text="Edit"
+            android:textSize="24dp"
+            android:drawableLeft="@drawable/baseline_edit_24"
+            android:id="@+id/editbtn"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/deletebtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="Delete"
+            android:textSize="24dp"
+            android:layout_marginEnd="3dp"
+            android:drawableLeft="@drawable/ic_delete"/>
+    </LinearLayout>
+
+</LinearLayout>
